@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2080/2080785.png">
+    <meta charset="utf-8">
+    <title>Youtube Video Downloader</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+          crossorigin="anonymous">
+    <link href="{{ url_for('static', filename = '/index.css')}}"  rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Youtube Video Downloader</h1>
+            <div class="lead">
+                <form action="/downloadyt" method="post">
+                    <input type="url" class="form-control" placeholder="Enter URL" name="urll" required>
+                    <button type="submit" class="btn btn-success mt-3">Download</button>
+                </form>
+            </div>
+        </main>
+
+        <a href="https://www.youtube.com/" target=”_blank” class="logo">
+			<img src="https://cdn.freebiesupply.com/logos/thumbs/2x/youtube-logo.png" widht="600" height="400">
+		</a>
+
+        <footer class="mastfoot mt-auto">
+            <div class="inner">
+                <p>Creator: Giorgi Panjikidze.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
